@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Piggy Picnic</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+	<body>
+
+	<!-- template for the modal component -->
+<script type="text/x-template" id="modal-template">
+      <transition name="modal">
+        <div class="modal-mask">
+          <slot name="button"></slot>
+		  <slot name="image"></slot>
+        </div>
+      </transition>
+    </script>
+
+		
+		<div id="app2" id="container" v-cloak>
+
+			<div id="speechBubble">
+				<div class="speechContent">
+					<p>I am hungry. Feed Me.</p>
+					<h1>{{goal}}</h1>
+				</div>
+				<img id="bubble" src="images/bubble.png" alt="Speech Bubble">
+			</div>
+
+			<div id="piggy">
+				<img id="head" src="images/Head 2-Mouth Open.png" alt="Piggy Head">
+				<img id="body" src="images/Body 1.png" alt="Piggy Body">
+				<img id="arms" src="images/Arms 1.png" alt="Piggy Arms">
+			</div>
+
+			<div id="money">
+				<a href="#" v-on:click="penny(); countUp();"><img id="penny" src="images/1.png" alt="Penny"></a>
+				<a href="#" v-on:click="nickel(); countUp();"><img id="nickel" src="images/5.png" alt="Nickel"></a>
+				<a href="#" v-on:click="dime(); countUp();"><img id="dime" src="images/10.png" alt="Dime"></a>
+				<a href="#" v-on:click="quarter(); countUp();"><img id="quarter" src="images/25.png" alt="Quarter"></a>
+				<a href="#" v-on:click="dollar(); countUp();"><img id="dollar" src="images/1D.png" alt="Dollar"></a>
+				<a href="#" v-on:click="fiveDollar(); countUp();"><img id="fiveDollars" src="images/5D.png" alt="Five Dollars"></a>
+
+				<p>{{winner}}{{loser}}{{over}}</p>
+			</div>
+			
+			<div id="moves">
+				<p>Moves:</p>
+				<h1>{{count}}</h1>
+
+				<p>Amount:</p>
+				<h1>{{money | currency}}</h1>
+			</div>
+
+			<div id="gauge">
+				<img id="gaugeColors" src="images/gauge.png" alt="Gauge">
+				<img id="gaugeArrowOrange" src="images/gauge-arrow-orange.png" alt="Gauge Arrow">
+				<img class="gaugeFace" src="images/orange.png" alt="Gauge Face">
+			</div>
+
+		
+		
+		<div id="background"></div>
+
+
+      <!-- use the modal component, pass in the prop -->
+      <modal v-if="winnerModal" @close="winnerModal = false">
+        <a class="next" slot="button" href="question-three.html"><h1>Next</h1></a>
+        <img slot="image" src="images/PPG Win-question.jpg" alt="Overlay">
+      </modal>
+
+      <modal v-if="loserModal" @close="loserModal = false">
+        <a class="next" slot="button" href="question-two.html"><h1>Retry!</h1></a>
+        <img slot="image" src="images/PPG No Moves.jpg" alt="Overlay">
+      </modal>
+
+      <modal v-if="overModal" @close="overModal = false">
+		<a class="next" slot="button" href="question-two.html"><h1>Retry!</h1></a>
+        <img slot="image" src="images/PPG full.jpg" alt="Overlay">
+      </modal>
+
+	</div>
+	</body>
+
+	<script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+	<script src="js/two.js"></script>
+</html>

@@ -1,0 +1,333 @@
+@font-face {
+  font-family: grilled-cheese;
+  src: url('../fonts/grilledcheese-btn.ttf') format('truetype'),
+  url('../fonts/grilledcheese-btn.woff') format('woff');
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+}
+
+.next {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'grilled-cheese';
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.next a, .next h1 {
+    font-family: 'grilled-cheese';
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.next:hover {
+  text-decoration: none;
+}
+
+.start {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'grilled-cheese';
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.start a, .start h1 {
+    font-family: 'grilled-cheese';
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.start:hover {
+  text-decoration: none;
+}
+
+.restart {
+    position: absolute;
+    top: 76.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'grilled-cheese';
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.restart a, .restart h1 {
+    font-family: 'grilled-cheese';
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.restart:hover {
+  text-decoration: none;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/*END MODAL STYLES*/
+
+
+/*INTRO STYLES BEGIN*/
+
+#intro {
+  position: absolute;
+  width:1920px;
+  height: 1080px;
+}
+
+#logo {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 48%;
+  left: 50%;
+}
+
+/*END INTRO STYLES*/
+
+
+/*SPEECH BUBBLE STYLES*/
+
+#speechBubble {
+  width: 400px;
+  height: 256px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 23%;
+  left: 71%;
+  z-index: 4;
+}
+
+#speechBubble p {
+  width: 70%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 34%;
+  left: 54%;
+  font-family: 'grilled-cheese';
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #a9c2c9;
+  text-align: center;
+}
+
+#speechBubble h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 54%;
+  font-family: 'grilled-cheese';
+  font-weight: bold;
+  font-size: 5em;
+  color: #a9c2c9;
+}
+
+/*END SPEECH BUBBLE STYLES*/
+
+
+/*PIGGY STYLES*/
+
+#piggy {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+}
+
+#head {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 29%;
+  left: 50%;
+  z-index: 3;
+}
+
+#arms {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 48%;
+  left: 50%;
+}
+
+#body {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 50%;
+  z-index:2;
+}
+
+/*END PIGGY STYLES*/
+
+
+#money  {
+  position: absolute;
+}
+
+#penny {
+  position: absolute;
+  top: 790px;
+  left: 441px;
+}
+
+#nickel {
+  position: absolute;
+  top: 790px;
+  left: 621px;
+}
+
+#dime {
+  position: absolute;
+  top: 790px;
+  left: 794px;
+}
+
+#quarter {
+  position: absolute;
+  top: 790px;
+  left: 965px;
+}
+
+#dollar{
+  position: absolute;
+  top: 750px;
+  left: 1131px;
+}
+
+#fiveDollars{
+  position: absolute;
+  top: 750px;
+  left: 1301px;
+}
+
+#moves {
+  z-index: 1;
+  position: absolute;
+  width: 156px;
+  height: 235px;
+  top: 327px;
+  left: 437px;
+  font-family: "grilled-cheese";
+}
+
+#moves p {
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  padding: .5em 1em 0em 1em;
+}
+
+#moves h1 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 0em;
+}
+
+#gauge {
+  width: 155px;
+  height: 186px;
+  position: absolute;
+  left: 440px;
+  top: 90px;
+}
+
+#gaugeColors {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+#gaugeArrow {
+  position: absolute;
+  top: 62px;
+  left: 26px;
+}
+
+#gaugeArrowOrange {
+  position: absolute;
+  top: 55px;
+  left: 26px;
+}
+
+#gaugeArrowYellow {
+  position: absolute;
+  top: 23px;
+  left: 63px;
+}
+
+#gaugeArrowLightGreen {
+  position: absolute;
+  top: 53px;
+  left: 63px;
+}
+
+#gaugeArrowGreen {
+  position: absolute;
+  top: 62px;
+  left: 63px;
+}
+
+.gaugeFace {
+  position: absolute;
+  top: 102px;
+  left: 42px;
+}
+
+#background {
+  width: 1920px;
+  height: 1080px;
+  background-image: url(../images/background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
