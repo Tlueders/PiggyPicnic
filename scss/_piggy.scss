@@ -1,0 +1,83 @@
+/*INTRO STYLES BEGIN*/
+#intro {
+  position: absolute;
+  width:1920px;
+  height: 1080px;
+}
+
+#logo {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 48%;
+  left: 50%;
+}
+/*END INTRO STYLES*/
+
+
+/*SPEECH BUBBLE STYLES*/
+#speechBubble {
+  width: 400px;
+  height: 256px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 23%;
+  left: 71%;
+  z-index: 4;
+}
+
+#speechBubble p {
+  width: 70%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 34%;
+  left: 54%;
+  font-family: 'grilled-cheese';
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #a9c2c9;
+  text-align: center;
+}
+
+#speechBubble h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 54%;
+  font-family: 'grilled-cheese';
+  font-weight: bold;
+  font-size: 5em;
+  color: #a9c2c9;
+}
+/*END SPEECH BUBBLE STYLES*/
+
+
+/*PIGGY STYLES*/
+#piggy {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+}
+
+#head {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 29%;
+  left: 50%;
+  z-index: 3;
+}
+
+#arms {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 48%;
+  left: 50%;
+}
+
+#body {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 50%;
+  z-index:2;
+}
+/*END PIGGY STYLES*/

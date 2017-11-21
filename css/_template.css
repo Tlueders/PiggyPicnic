@@ -1,0 +1,83 @@
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  display: table;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease; }
+
+.modal-body {
+  margin: 20px 0; }
+
+.modal-default-button {
+  float: right; }
+
+.next {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'grilled-cheese';
+  font-size: 2em;
+  font-weight: bold;
+  color: white; }
+
+.next a, .next h1 {
+  font-family: 'grilled-cheese';
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none; }
+
+.next:hover {
+  text-decoration: none; }
+
+.start {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'grilled-cheese';
+  font-size: 2em;
+  font-weight: bold;
+  color: white; }
+
+.start a, .start h1 {
+  font-family: 'grilled-cheese';
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none; }
+
+.start:hover {
+  text-decoration: none; }
+
+.restart {
+  position: absolute;
+  top: 76.5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'grilled-cheese';
+  font-size: 2em;
+  font-weight: bold;
+  color: white; }
+
+.restart a, .restart h1 {
+  font-family: 'grilled-cheese';
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none; }
+
+.restart:hover {
+  text-decoration: none; }

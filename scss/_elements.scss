@@ -1,0 +1,73 @@
+#moves {
+  z-index: 1;
+  position: absolute;
+  width: 156px;
+  height: 235px;
+  top: 327px;
+  left: 437px;
+  font-family: "grilled-cheese";
+}
+
+#moves p {
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  padding: .5em 1em 0em 1em;
+}
+
+#moves h1 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 0em;
+}
+
+#gauge {
+  width: 155px;
+  height: 186px;
+  position: absolute;
+  left: 440px;
+  top: 90px;
+}
+
+#gaugeColors {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+#gaugeArrow {
+  position: absolute;
+  top: 62px;
+  left: 26px;
+}
+
+#gaugeArrowOrange {
+  position: absolute;
+  top: 55px;
+  left: 26px;
+}
+
+#gaugeArrowYellow {
+  position: absolute;
+  top: 23px;
+  left: 63px;
+}
+
+#gaugeArrowLightGreen {
+  position: absolute;
+  top: 53px;
+  left: 63px;
+}
+
+#gaugeArrowGreen {
+  position: absolute;
+  top: 62px;
+  left: 63px;
+}
+
+.gaugeFace {
+  position: absolute;
+  top: 102px;
+  left: 42px;
+}

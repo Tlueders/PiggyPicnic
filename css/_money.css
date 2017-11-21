@@ -1,0 +1,32 @@
+#money {
+  position: absolute; }
+
+#penny {
+  position: absolute;
+  top: 790px;
+  left: 441px; }
+
+#nickel {
+  position: absolute;
+  top: 790px;
+  left: 621px; }
+
+#dime {
+  position: absolute;
+  top: 790px;
+  left: 794px; }
+
+#quarter {
+  position: absolute;
+  top: 790px;
+  left: 965px; }
+
+#dollar {
+  position: absolute;
+  top: 750px;
+  left: 1131px; }
+
+#fiveDollars {
+  position: absolute;
+  top: 750px;
+  left: 1301px; }
